@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/tvMainLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Login"
+        android:textSize="24pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.449"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/LoginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:text="Login"
+        app:layout_constraintEnd_toEndOf="@+id/tilPassWord"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/tilPassWord"
+        app:layout_constraintTop_toBottomOf="@+id/tilPassWord" />
+
+    <TextView
+        android:id="@+id/tvLCreate"
+        android:layout_width="163dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="36dp"
+        android:text="Don't have  an account?"
+        app:layout_constraintEnd_toEndOf="@+id/LoginBtn"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="@+id/LoginBtn"
+        app:layout_constraintTop_toBottomOf="@+id/LoginBtn" />
+
+    <TextView
+        android:id="@+id/tvLSignup"
+        android:layout_width="49dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:text="Sign up"
+        app:layout_constraintBottom_toBottomOf="@+id/tvLCreate"
+        app:layout_constraintStart_toEndOf="@+id/tvLCreate"
+        app:layout_constraintTop_toTopOf="@+id/tvLCreate" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="445dp"
+        android:layout_height="239dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvLSignup"
+        app:layout_constraintHorizontal_bias="0.599"
+        app:layout_constraintStart_toStartOf="@+id/tvLCreate"
+        app:layout_constraintTop_toBottomOf="@+id/tvLCreate"
+        app:srcCompat="@drawable/log" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilUserName"
+        android:layout_width="314dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvMainLogin"
+        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintStart_toStartOf="@+id/tvMainLogin"
+        app:layout_constraintTop_toBottomOf="@+id/tvMainLogin">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="UserName" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilPassWord"
+        android:layout_width="322dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="@+id/tilUserName"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@+id/tilUserName"
+        app:layout_constraintTop_toBottomOf="@+id/tilUserName">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="password" />
+    </com.google.android.material.textfield.TextInputLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
