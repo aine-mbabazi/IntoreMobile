@@ -19,12 +19,14 @@ class LoginActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.tvLSignup.setOnClickListener {
-            val intent = Intent(this,CategoryActivity ::class.java)
+            val intent = Intent(this,SignUpActivity ::class.java)
             startActivity(intent)
-            binding.LoginBtn.setOnClickListener {
-                validateRegistration()
-            }
+
         }
+//        binding.LoginBtn.setOnClickListener {
+//           val intent = Intent(this,CategoryActivity ::class.java )
+//        }
+        validateRegistration()
     }
 
 

@@ -21,10 +21,14 @@ class SignUpActivity : AppCompatActivity() {
         binding.tvLogin2.setOnClickListener {
             val intent = Intent(this,LoginActivity ::class.java)
             startActivity(intent)
-            binding.SignUpBtn.setOnClickListener {
-                validateRegistration()
-            }
+
         }
+
+        binding.SignUpBtn.setOnClickListener {
+            val intent = Intent(this,LoginActivity ::class.java)
+            startActivity(intent)
+        }
+        validateRegistration()
     }
 
 
