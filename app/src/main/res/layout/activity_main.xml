@@ -53,6 +53,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="serif"
         android:text="Create an account"
+        android:backgroundTint="#225E25"
         android:textColorLink="#1E8340"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -64,6 +64,12 @@ fun validateRegistration(){
     if(confirmPassword.isBlank()){
         formError = true
         binding .etConfirmPassword.error = "password is required"
+
+
+    }
+    if(password!=confirmPassword){
+        formError = true
+        binding.etConfirmPassword.error  = "Password & confirmation must match!"
     }
 
     val phoneNumber= binding.etPhoneNumber.text.toString()

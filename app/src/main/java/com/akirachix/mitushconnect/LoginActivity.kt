@@ -18,14 +18,16 @@ class LoginActivity : AppCompatActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.tvLSignup.setOnClickListener {
-            val intent = Intent(this,SignUpActivity ::class.java)
+        binding.LoginBtn.setOnClickListener {
+            val intent = Intent(this,CategoryActivity::class.java)
             startActivity(intent)
 
         }
-//        binding.LoginBtn.setOnClickListener {
-//           val intent = Intent(this,CategoryActivity ::class.java )
-//        }
+
+        binding.tvLSignup.setOnClickListener {
+            val intent = Intent(this,SignUpActivity ::class.java)
+            startActivity(intent)
+        }
         validateRegistration()
     }
 

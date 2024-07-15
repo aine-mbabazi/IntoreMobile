@@ -25,6 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="84dp"
         android:text="Login"
+        android:backgroundTint="#225E25"
         app:layout_constraintEnd_toEndOf="@+id/tilPassWord"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="@+id/tilPassWord"
@@ -93,6 +94,7 @@
             android:id="@+id/etpassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="password" />
+            android:hint="password"
+            />
     </com.google.android.material.textfield.TextInputLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
