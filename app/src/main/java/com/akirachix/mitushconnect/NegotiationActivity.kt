@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.akirachix.mitushconnect.databinding.ActivityLoginBinding
 import com.akirachix.mitushconnect.databinding.CategoryBinding
-import com.akirachix.mitushconnect.databinding.NegotiationRecyclerBinding
 import com.akirachix.mitushconnect.databinding.NegotiationsBinding
 
 class NegotiationActivity: AppCompatActivity()  {
@@ -14,21 +13,21 @@ class NegotiationActivity: AppCompatActivity()  {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = NegotiationActivity.inflate(layoutInflater)
+        binding = NegotiationsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.LoginBtn.setOnClickListener {
+        binding.btnSubmit.setOnClickListener {
             val intent = Intent(this,CategoryActivity::class.java)
             startActivity(intent)
 
         }
 
-        binding.tvLSignup.setOnClickListener {
+        binding.btnSubmit2.setOnClickListener {
             val intent = Intent(this,SignUpActivity ::class.java)
             startActivity(intent)
         }
-        validateRegistration()
+
     }
 
     }
-}
+

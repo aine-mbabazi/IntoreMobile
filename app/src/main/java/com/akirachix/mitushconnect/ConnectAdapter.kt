@@ -3,13 +3,14 @@ package com.akirachix.mitushconnect
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.akirachix.mitushconnect.databinding.CategoryListBinding
+import com.akirachix.mitushconnect.databinding.ConnectBinding
+
 
 class ConnectAdapter (var connectList: List<CategoryData>): RecyclerView.Adapter<ConnectViewHolder>()
 {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ConnectViewHolder {
         val binding =
-            CategoryListBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+            ConnectBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ConnectViewHolder(binding)
     }
 
@@ -29,4 +30,4 @@ class ConnectAdapter (var connectList: List<CategoryData>): RecyclerView.Adapter
 }
 
 
-class ConnectViewHolder(var binding: CategoryListBinding) : RecyclerView.ViewHolder(binding.root)
+class ConnectViewHolder(var binding: ConnectBinding) : RecyclerView.ViewHolder(binding.root)
